@@ -96,7 +96,7 @@ public class AddUser extends HttpServlet {
 			dao.insertUser(u);
 			ArrayList<User> allUsers = dao.getAllUsers();
 			request.setAttribute("getUsers", allUsers);
-			RequestDispatcher rd = request.getRequestDispatcher("Answers.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("Answers.html");
 			rd.include(request, response);
 
 		} catch (SQLException e) {
